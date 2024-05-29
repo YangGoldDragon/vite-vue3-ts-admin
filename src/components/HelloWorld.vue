@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import variable from "@/styles/variable.module.scss";
 import { useCounterStore } from "@/store/index"
+import { loginAPI } from "@/api/common"
 
 defineProps<{ msg: string }>();
 
 const counterStore = useCounterStore();
+
+function loginAPIFunc() {
+  loginAPI({}).then(() => {
+    console.log('loginAPI请求成功')
+  })
+}
 </script>
 
 <template>
@@ -40,10 +47,21 @@ const counterStore = useCounterStore();
     <div class="blue">SVG 本地图标</div>
     <div class="ft20-blue">SVG 本地图标2</div>
   </div>
+  <div class="login" @click="loginAPIFunc">登 录</div>
 </template>
 
 <style lang="scss" scoped>
 .red {
   color: $red;
+}
+
+.login {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(66, 106, 167);
+  padding: 5px 0;
+  cursor: pointer;
+  border: 1px solid rgb(66, 106, 167);
 }
 </style>

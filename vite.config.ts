@@ -70,5 +70,14 @@ export default defineConfig({
         additionalData: `@use "@/styles/variable.scss" as *;`
       }
     }
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://www.path1.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    }
   }
 });

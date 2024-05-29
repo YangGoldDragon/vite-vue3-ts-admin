@@ -2,6 +2,8 @@
 import { useCounterStore } from "@/store/index"
 
 const counterStore = useCounterStore();
+
+console.log(import.meta.env.vite)
 </script>
 
 <template>
