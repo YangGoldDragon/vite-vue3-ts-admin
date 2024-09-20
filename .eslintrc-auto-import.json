@@ -62,6 +62,23 @@
     "watch": true,
     "watchEffect": true,
     "watchPostEffect": true,
-    "watchSyncEffect": true
+    "watchSyncEffect": true,
+    "onBeforeRouteLeave": true,
+    "onBeforeRouteUpdate": true,
+    "useLink": true,
+    "useRoute": true,
+    "useRouter": true,
+    "acceptHMRUpdate": true,
+    "createPinia": true,
+    "defineStore": true,
+    "getActivePinia": true,
+    "mapActions": true,
+    "mapGetters": true,
+    "mapState": true,
+    "mapStores": true,
+    "mapWritableState": true,
+    "setActivePinia": true,
+    "setMapStoreSuffix": true,
+    "storeToRefs": true
   }
 }

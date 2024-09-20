@@ -5,9 +5,13 @@ import App from './App.vue'
 import 'virtual:svg-icons-register';
 import 'virtual:uno.css'
 import { setupStore } from "@/store/index";
+import { setupRouter } from "@/router/index";
+
 
 const app = createApp(App)
 
 setupStore(app)
+setupRouter(app)
 
 app.mount('#app')
+
