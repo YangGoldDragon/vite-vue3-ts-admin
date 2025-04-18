@@ -44,11 +44,11 @@ function loginAPIFunc() {
 }
 
 .login {
+  padding: 5px 0;
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
   color: rgb(66, 106, 167);
-  padding: 5px 0;
   cursor: pointer;
   border: 1px solid rgb(66, 106, 167);
 }

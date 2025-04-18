@@ -78,5 +78,6 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
+    port: 3001, // 修改为你需要的端口号
   },
 })

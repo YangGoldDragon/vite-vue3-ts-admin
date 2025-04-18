@@ -47,8 +47,8 @@ function toListChildren() {
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
   transition: filter 300ms;
+  will-change: filter;
 }
 
 .logo:hover {
@@ -65,12 +65,12 @@ ul {
 }
 li {
   padding: 5px 10px;
-  background-color: rgb(177, 177, 209);
   margin: 20px 0;
   cursor: pointer;
+  background-color: rgb(177, 177, 209);
   &:hover {
-    background-color: rgb(26, 26, 87);
     color: white;
+    background-color: rgb(26, 26, 87);
   }
 }
 </style>

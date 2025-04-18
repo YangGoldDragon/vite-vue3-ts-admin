@@ -28,15 +28,15 @@ const formatRoute = ref(Object.keys(route).map(key => {
 
 .routeTitle{
   display: flex;
-  width: 500px;
   justify-content: flex-start;
+  width: 500px;
 }
 
 .routeList{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   width: 500px;
   margin-top: 5px;
 }

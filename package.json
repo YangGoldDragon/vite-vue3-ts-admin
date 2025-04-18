@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:stylelint": "stylelint  \"**/*.{css,scss,vue,html}\" --fix"
   },
   "dependencies": {
     "axios": "^1.7.2",
@@ -22,8 +23,18 @@
     "eslint": "^9.13.0",
     "eslint-plugin-vue": "^9.30.0",
     "globals": "^15.11.0",
+    "postcss": "^8.5.3",
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.3.3",
     "sass": "^1.72.0",
+    "stylelint": "^16.18.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.6.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-prettier": "^5.0.3",
     "typescript": "^5.2.2",
     "typescript-eslint": "^8.12.2",
     "unocss": "^0.58.6",
